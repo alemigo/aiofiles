@@ -92,6 +92,10 @@ several useful ``os`` functions that deal with files:
 
 * ``stat``
 * ``sendfile``
+* ``rename``
+* ``remove``
+* ``mkdir``
+* ``rmdir``
 
 Writing tests for aiofiles
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -117,6 +121,17 @@ as desired. The return type also needs to be registered with the
 
 History
 ~~~~~~~
+
+0.6.0 (UNRELEASED)
+``````````````````
+
+
+0.5.0 (2020-04-12)
+``````````````````
+- Python 3.8 support. Code base modernization (using ``async/await`` instead of ``asyncio.coroutine``/``yield from``).
+- Added ``aiofiles.os.remove``, ``aiofiles.os.rename``, ``aiofiles.os.mkdir``, ``aiofiles.os.rmdir``.
+  `#62 <https://github.com/Tinche/aiofiles/pull/62>`_
+
 
 0.4.0 (2018-08-11)
 ``````````````````
